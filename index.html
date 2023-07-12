@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+
+body {
+  background-image: url(./slatefog.jpeg);
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+.mainContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+/* Navbar CSS Below.. */
+.headNavContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.headNavContainer ul {
+  display: flex;
+  list-style: none;
+  padding-top: 10px;
+}
+
+.headNavContainer .mainNav,
+.headNavContainer .userNav,
+.sideNavContainer ul,fd
+.userClass {
+  display: flex;
+  list-style: none;
+  padding: 10px;
+}
+
+.headNavContainer .mainNav a,
+.headNavContainer .userNav a,
+.sideNavContainer ul a,
+.userClass a {
+  color: white;
+  text-decoration: none;
+}
+
+.headNavContainer .userNav ul,
+.userClass ul {
+  margin-left: 20px;
+  padding: 0;
+}
+
+.mainNav {
+  margin-left: 15px;
+}
+
+.sideNavContainer ul {
+  display: grid;
+  grid-template-columns: 150px;
+  grid-template-rows: 50px 75px 75px 75px 75px 75px 75px 75px 75px;
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+}
+
+/* Navbar CSS Above.. */
+
+/* Resource Menu Below.. */
+
+.resourceGrid {
+  display: grid;
+  grid-template-columns: 150px 150px;
+  grid-template-rows: 50px 75px 75px 75px 75px 75px 75px 75px 75px;
+}
+
+.resourceMenu {
+  grid-column: span 2;
+}
+
+.resourceMenuButtons {
+  grid-column: span 2;
+}
+
+.resourceOneButton {
+  grid-row-start: 2;
+  grid-column-start: 1;
+}
+
+.resourceTwoButton {
+  grid-row-start: 2;
+  grid-column-start: 2;
+}
+
+ .resourceThreeButton {
+  grid-row-start: 4;
+  grid-column-start: 1;
+}
+
+.resourceFourButton {
+  grid-row-start: 4;
+  grid-column-start: 2;
+
+}
+
+.resourceFiveButton {
+  grid-row-start: 5;
+  grid-column-start: 1;
+}
+
+.resourceSixButton {
+  grid-row-start: 5;
+  grid-column-start: 2;
+}
+
+.resourceSevenButton {
+  grid-row-start: 6;
+  grid-column-start: 1;
+}
+
+.resourceEightButton {
+  grid-row-start: 6;
+  grid-column-start: 2;
+}
+
+.resourceOneButton,
+.resourceTwoButton,
+.resourceThreeButton,
+.resourceFourButton,
+.resourceFiveButton,
+.resourceSixButton,
+.resourceSevenButton,
+.resourceEightButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-row: span 2;
+}
+
+/* Resource Menu Above */
+/* Activity Menu Below */
+
+.activityGrid {
+  display: grid;
+  grid-template-columns: 150px 150px 150px 150px;
+  grid-template-rows: 50px 75px 75px 75px 75px 75px 75px 75px 75px;
+}
+
+.activityMenu {
+    grid-column: 1 / span 4;
+}
+
+.resourceStats {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 2;
+}
+
+.combatStats {
+    grid-column: 3 / span 2;
+    grid-row: 2 / span 2;
+}
+
+.resourceContainer {
+    grid-column: 1 / span 4;
+    grid-row: 4 / span 4;
+}
+
+.storageContainer {
+    grid-column: 1 / span 2;
+    grid-row: 8 / span 2;
+}
+
+.automationContainer {
+    grid-column: 3 / span 2;
+    grid-row: 8 / span 2;
+}
+
+/* Activity Menu Above */
+/* Construction Menu Below */
+
+.constructionGrid {
+  display: grid;
+  grid-template-columns: 150px 150px;
+  grid-template-rows: 50px 75px 75px 75px 75px 75px 75px 75px 75px;
+}
+
+.constructionMenu {
+    grid-column: 1 / span 2;
+}
+
+.campButton {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 2;
+}
+
+.transportationButton {
+    grid-column: 1 / span 2;
+    grid-row: 4 / span 2;
+}
+
+.toolsButton {
+    grid-column: 1 / span 2;
+    grid-row: 6 / span 2;
+}
+
+.automationButton {
+    grid-column: 1 / span 2;
+    grid-row: 8 / span 2;
+}
+
+
+
+  </style>
+</head>
+
+<body>
+    <div class="navbarContainer">
+        <nav class="headNavContainer">
+      <ul class="mainNav">
+        <li><a href="#">Home & Logo...</a></li>
+      </ul>
+      <ul class="userNav">
+        <li><a href="#">Register</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+    </nav>
+  
+    <div class="mainContainer">
+      <nav class="sideNavContainer">
+        <ul>
+          <li><a href="#" class="profileButton">Profile</a></li>
+          <li><a href="#" class="inventoryButton">Inventory</a></li>
+          <li><a href="#" class="shopsButton">Shops</a></li>
+          <li><a href="#" class="exploreButton">Explore</a></li>
+          <li><a href="#" class="combatButton">Combat</a></li>
+          <li><a href="#" class="resourceButton">Resource</a></li>
+          <li><a href="#" class="craftButton">Craft</a></li>
+          <li><a href="#" class="passiveButton">Passive</a></li>
+          <li><a href="#" class="activeButton">Active</a></li>
+        </ul>
+      </nav>   
+        <div class="resourceGrid">
+        <div class="resourceMenu">Resource Menu</div>
+          <div class="resourceOneButton">1</div>
+        <div class="resourceTwoButton">2</div>
+        <div class="resourceThreeButton">3</div>
+        <div class="resourceFourButton">4</div>
+        <div class="resourceFiveButton">5</div>
+        <div class="resourceSixButton">6</div>
+        <div class="resourceSevenButton">7</div>
+        <div class="resourceEightButton">8</div> 
+      </div> 
+      <div class="activityGrid">
+        <div class="activityMenu">Activity Menu</div>
+        <div class="resourceStats">Resource Info</div>
+        <div class="combatStats">Combat Interface Small</div>
+        <div class="resourceContainer">Resource Interface</div>
+        <div class="storageContainer">Storage</div>
+        <div class="automationContainer">Device</div>
+    </div>
+    <div class="constructionGrid">
+        <div class="constructionMenu">Construction Menu</div>
+    <div class="campButton">Camp</div>
+    <div class="transportationButton">Transportation</div>
+    <div class="toolsButton">Tool</div>
+    <div class="automationButton">Auto</div>
+    </div>
+    </div>
+
+
+
+
+
+  
+
+
+
+
+  </body>
+
+</html>
